@@ -1,0 +1,19 @@
+<div class="row" style="padding-top: 20px;"  style="margin-top:25px;" >
+	<div class="col-sm-10 offset-sm-1">
+		<div class="card">
+			<div class="card-body">
+				<p class="text-center">Crypto Currency Rates (Refreshed Every 5mins)</p>
+					<canvas id="line" class="chart chart-bar" chart-data="data"
+					chart-labels="labels" chart-options="options">
+					
+					</canvas>
+					<div class="text-center">
+						<button class="btn btn-sm btn-primary" ng-disabled="current_count == 0" ng-click="getrate(current_count-10)"><<&nbsp;Previous</button>
+						<button class="btn btn-sm btn-primary" ng-dsiabled="current_count == 100" ng-click="
+						getrate(current_count+10)">Next&nbsp;>></button>
+					</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
